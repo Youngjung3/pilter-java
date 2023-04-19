@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="5"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2A3FDA"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="약 추천" />
+    <TableRow>
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textbox_background"
+            android:gravity="center"
+            android:text="해당되는 증상을 선택해주세요."
+            android:textSize="16dp"
+            android:layout_column="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/Checkbox1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="편두통" />
+
+        <CheckBox
+            android:id="@+id/Checkbox2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:text="신경통"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <CheckBox
+            android:id="@+id/Checkbox3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:text="발열"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/Checkbox4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:text="치통  "
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/Checkbox5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:text="근육통"
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/Checkbox6"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:button="@drawable/selector_checked"
+            android:text="생리통"
+            android:background="@drawable/selector_checked"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    <RadioGroup
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_gender"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="남성"
+            android:id="@+id/man"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            ></RadioButton>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="여성"
+            android:id="@+id/girl"
+            android:layout_weight="1"
+            ></RadioButton>
+
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ageSpinner2"
+        android:gravity="center_horizontal"
+        android:background="@drawable/spinner_background"></Spinner>
+
+    <Button
+        android:id="@+id/search_pill"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="추천"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonimage2"></Button>
+
+
+
+
+
+</TableLayout>
